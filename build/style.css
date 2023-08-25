@@ -150,6 +150,7 @@
     font-family: "Courier Prime";
     color: #5e8ef2;
     font-size: 25px;
+    font-weight: bold;
   }
   .align-mobile {
     align-items: center;
@@ -182,6 +183,7 @@
 }
 
 .about-me {
+  font-weight: 500;
   padding-top: 90px;
   min-height: 100vh;
   height: auto;
@@ -198,13 +200,29 @@
 .about-me .about-text {
   font-size: 15px;
 }
+.about-me .bottone-cv {
+  background-color: #3c73e8;
+  color: antiquewhite;
+  border: none;
+  margin-top: 40px;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.about-me .bottone-cv:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
 
 @media (max-width: 992px) {
-  .img-about {
-    max-width: 300px;
+  .about-me .img-about {
+    max-width: 400px;
   }
 }
 .projects {
+  font-weight: 500;
   padding-top: 100px;
   height: 100vh;
 }
@@ -230,7 +248,8 @@
 }
 
 .contenitore-info {
-  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   padding: 20px;
   margin-bottom: 5px;
 }
@@ -250,6 +269,10 @@
   height: 200px;
 }
 
+.modal-fullscreen {
+  height: auto;
+}
+
 .descrizione {
   padding-top: 20px;
 }
@@ -263,14 +286,26 @@
 }
 
 .modal-body {
-  height: 80%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   .carosello {
-    display: none;
+    margin-bottom: 10px;
   }
   .modale-progetto {
     font-size: 13px;
   }
+}
+/*******************************************************CONTACTS PAGE***************************************************************/
+.contacts {
+  padding-top: 100px;
+  min-height: 100vh;
+  height: auto;
+}
+.contacts h1 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

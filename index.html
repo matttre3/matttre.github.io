@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./build/style.css">
+
 </head>
 
 <body>
@@ -39,6 +40,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contacts" onclick="closeMenu()">CONTACTS</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -68,7 +70,7 @@
     <div class="container">
       <h1>ABOUT ME</h1>
       <div class="rettangolino"></div>
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
           <img src="./images/foto-about.png" class="img-about" alt="...">
         </div>
@@ -86,9 +88,10 @@
           <p>Oh, and speaking of vibes, my go-to jam is "Kiss Kiss" by Machine Gun Kelly. 🎵</p>
           <p>So there you have it – a glimpse into my world where design, tech, gaming, and a dash of racing create my
             unique story. Dive into my portfolio and see how these passions shape my creative journey!</p>
-
         </div>
       </div>
+      <div class="d-flex align-items-center justify-content-center"><a href="./docs/CV Romano Matteo.pdf"
+          download="CV Romano Matteo.pdf" target="_blank"> <button class="bottone-cv"> Download CV</button></a></div>
     </div>
   </section>
 
@@ -163,12 +166,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center h-100">
-          <div class="card h-100  web-design" style="width: 18rem;">
-            <img src="./images/jemib-project.png" class="img-fluid rounded card-edit" alt="..." data-bs-toggle="modal"
-              data-bs-target="#jemib">
-          </div>
-        </div>
+
 
         <!--------------------------------------------------------------------- MODALE GAJA ------------------------------------------------------------------------>
         <div class="modal fade" id="gaja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -235,28 +233,180 @@
           </div>
         </div>
 
+        <!--------------------------------------------------------------------- MODALE portfolio ------------------------------------------------------------------------>
+        <div class="modal fade" id="portfolio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i>Web Design & Web Development</i></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex align-items-center justify-content-center">
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-12 col-lg-7 carosello">
+                    <div id="carouselExample3" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/sito.portfolio1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/sito.portfolio2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/sito.portfolio3.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 modale-progetto">
+                    <div class="contenitore-info">
+                      <h5><b>Information</b></h5>
+                      <p><b>Category:</b>Web Design & Web Development</p>
+                      <p><b>Url:<a href="https://matttre3.github.io/matttre.github.io/" target="_blank">
+                            matttre.github.io </a></b></p>
+                    </div>
+                    <div class="descrizione">
+                      <h5 class="modal-title"><b>Portfolio Project</b></h5>
+                      <p>This portfolio showcases my inaugural project created entirely through coding, moving beyond
+                        CMS platforms. Leveraging HTML, CSS, JS, and SCSS, I crafted a dynamic web experience while
+                        harnessing the power of Bootstrap. From structuring content with HTML to enhancing aesthetics
+                        via CSS and SCSS. This project embodies the beginning of my journey into web development,
+                        highlighting skills learned in the first chapters of Lacerba.io Front-end development course</p>
+                      <h5 class="modal-title"><b>Tools Used</b></h5>
+                      <p>HTML - CSS - SCSS - Bootstrap - javascript - Figma - Adobe Photoshop</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------------------------------------------- MODALE SUSHE ------------------------------------------------------------------------>
+        <div class="modal fade" id="sushe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i>UX/UI Design Project</i></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex align-items-center justify-content-center">
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-12 col-lg-7 carosello">
+                    <div id="carouselExample4" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/sushe2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/sushe1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/sushe3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/sushe4.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 modale-progetto">
+                    <div class="contenitore-info">
+                      <h5><b>Information</b></h5>
+                      <p><b>Category: </b>UX/UI Design Project</p>
+                      <p><b>More on: <a href="https://www.behance.net/gallery/161547735/Sushe-UXUI-Design-Project"
+                            target="_blank">Behance </a></b></p>
+                    </div>
+                    <div class="descrizione">
+                      <h5 class="modal-title"><b>Sushe App</b></h5>
+                      <p>Through the process of UX design, I conceptualized and crafted the interface for an innovative
+                        sushi ordering app. By meticulously curating user journeys, I ensured that customers can
+                        seamlessly navigate an extensive sushi selection, tailor orders to their preferences, and
+                        confidently finalize payments directly within the app. This project, representing my
+                        accomplishment across the initial five modules of the UX course by Coursera and Google,
+                        showcases my commitment to enhancing user experiences through intuitive design.</p>
+                      <h5 class="modal-title"><b>Tools Used</b></h5>
+                      <p>Figma - Interviews - Questionnaires - Affinity diagrams</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center h-100">
+          <div class="card h-100 graphic-design" style="width: 18rem;">
+            <img src="./images/portfolio-project.png" class="img-fluid rounded card-edit" alt="..."
+              data-bs-toggle="modal" data-bs-target="#portfolio">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center h-100">
+          <div class="card h-100  web-design" style="width: 18rem;">
+            <img src="./images/jemib-project.png" class="img-fluid rounded card-edit" alt="..." data-bs-toggle="modal"
+              data-bs-target="#jemib">
+          </div>
+        </div>
+
         <div class="col-6 col-md-3 d-flex justify-content-center align-items-center h-100">
           <div class="card h-100 web-design" style="width: 18rem;">
             <img src="./images/gaja-project.png" class="img-fluid rounded card-edit" alt="..." data-bs-toggle="modal"
               data-bs-target="#gaja">
           </div>
         </div>
-        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center h-100">
-          <div class="card h-100 graphic-design" style="width: 18rem;">
-            <img src="./images/portfolio-project.png" class="img-fluid rounded card-edit" alt="...">
-          </div>
-        </div>
+
         <div class="col-6 col-md-3 d-flex justify-content-center align-items-center h-100">
           <div class="card h-100 web-design" style="width: 18rem;">
-            <img src="./images/sushe-project.png" class="img-fluid rounded card-edit" alt="...">
+            <img src="./images/sushe-project.png" class="img-fluid rounded card-edit" alt="..." data-bs-toggle="modal"
+              data-bs-target="#sushe">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="./index.js"></script>
+
+<!--------------------------------------------------CONTACT SECTION------------------------------------------------------------------------------------------------->  
+<section class="contacts" id="contacts">
+  <div class="containe">
+    <h1>CONTACTS</h1>
+    <div class="rettangolino"></div>
+    <div class="row">
+      <div class="col-6">
+      
+      </div>
+      <div class="col-6">
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://kit.fontawesome.com/1399d6a2d8.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
