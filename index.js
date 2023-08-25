@@ -32,3 +32,9 @@ function type() {
 type(); // Avvia la funzione di scrittura
 
 
+function closeMenu() {
+    let menu = document.querySelector('.navbar-collapse');
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
+    }
+  }
