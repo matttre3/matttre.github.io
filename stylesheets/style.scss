@@ -204,10 +204,12 @@ margin-right:20px;
 .about-me {
     font-weight: 500;
     h1{
+
         padding-bottom: 20px;
         font-weight: bold;
         text-align: center;
         font-size: 32px;
+        margin-top: 100px;
     }
     padding-top: 90px;
     min-height: 100vh;
@@ -240,6 +242,23 @@ margin-right:20px;
 @media (max-width: 992px) {
     .about-me .img-about{
         max-width: 400px;
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+    .about-me .rettangolino{
+        margin-bottom: 0px;
+    }
+
+    .about-me .about-text p{
+        margin-top: 5px;
+        margin-right:  40px;
+        margin-left: 40px;
+    }
+    .about-me .about-text {
+        margin-top: 20px;
+    }
+    .about-me h1{
+        margin-top: 0px;
     }
 }
 
@@ -247,10 +266,28 @@ margin-right:20px;
 //****************************************************PROJECT SECTION***********************************************************************************//
 .projects {
     font-weight: 500;
+    .carousel-control-prev-icon{
+        background-color: grey;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .carousel-control-next-icon{
+        background-color: grey;
+        border-radius: 15px;
+        padding: 20px;
+    }
     h1{
         padding-bottom: 10px;
         font-weight: bold;
         font-size: 32px;
+        text-align: center;
+
+    }
+
+    h4{
+        padding-bottom: 10px;
+        font-weight:500;
+        font-size: 22px;
         text-align: center;
     }
     padding-top: 100px;
@@ -320,6 +357,10 @@ height: 200px;
 margin-bottom: 10px;
 }
 
+.projects{
+    height: auto;
+}
+
 .modale-progetto{
         font-size: 13px;
     }
@@ -329,13 +370,70 @@ margin-bottom: 10px;
 /*******************************************************CONTACTS PAGE***************************************************************/
 
 .contacts{
+    padding-top: 100px;
+    min-height:100vh;
+    height: auto;
+   
     h1{
         padding-bottom: 10px;
         font-weight: bold;
         font-size: 32px;
         text-align: center;
     }
-    padding-top: 100px;
-    min-height:100vh;
-    height: auto;
+    
+    h4{
+        padding-bottom: 10px;
+        font-weight:500;
+        font-size: 22px;
+        text-align: center;
+        color: #3b3b3b;
+    }
+    
+    a {
+        margin-top: 20px;
+    }
+    .icon-text-contacts{
+        color: #3b3b3b;
+    }
+    
+    .hov{
+        padding: 10px;
+        transition: .3s;
+    }
+    .hov:hover{
+        opacity: 0.7;
+    }
+
+
+.contorno{
+    border: 2px solid #3b3b3b;
+    padding: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 992px) {
+  .icon-contacts{
+    width: 50px;
+    height: 50px;
+  }  
+  .contacts{
+    h1{
+        margin-top: 300px;
+    }
+  }
+}
+}
+
+@media (min-width: 992px) {
+.contacts{
+    h1{
+    margin-top: 200px;
+}
+}
 }
