@@ -40,3 +40,32 @@ function closeMenu() {
   }
 
 
+  var modals = document.querySelectorAll('.caroselloclose');
+
+  modals.forEach(function(modal) {
+    modal.addEventListener('hidden.bs.modal', function() {
+          var videoElement = modal.querySelector('video');
+          console.log(videoElement)
+          if (videoElement && !videoElement.paused) {
+              videoElement.pause();
+          }
+      });
+  });
+
+
+  var modals = document.querySelectorAll('.caroselloclose');
+
+  modals.forEach(function(modal) {
+      var carousel = modal.querySelector('.carousel');
+      var videos = modal.querySelectorAll('video');
+  
+      carousel.addEventListener('slide.bs.carousel', function() {
+          // Interrompi la riproduzione di tutti i video nel carousel all'interno della modale
+          videos.forEach(function(video) {
+              if (!video.paused) {
+                  video.pause();
+              }
+          });
+      });
+  });
+  

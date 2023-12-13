@@ -193,7 +193,7 @@
   font-weight: bold;
   text-align: center;
   font-size: 32px;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .about-me .img-about {
   max-width: 500px;
@@ -241,7 +241,7 @@
 .projects {
   font-weight: 500;
   padding-top: 100px;
-  height: 100vh;
+  height: 200vh;
 }
 .projects .carousel-control-prev-icon {
   background-color: grey;
@@ -322,6 +322,20 @@
   height: auto;
 }
 
+.modal button {
+  margin-bottom: 100px;
+}
+
+.bottonicarosello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item video {
+  max-height: 700px;
+}
+
 @media (max-width: 768px) {
   .carosello {
     margin-bottom: 10px;
@@ -335,7 +349,7 @@
 }
 /*******************************************************CONTACTS PAGE***************************************************************/
 .contacts {
-  padding-top: 100px;
+  padding-top: 0px;
   min-height: 100vh;
   height: auto;
 }
@@ -387,6 +401,9 @@
 }
 
 @media (min-width: 992px) {
+  .contacts {
+    padding-top: 10px;
+  }
   .contacts h1 {
     margin-top: 200px;
   }
